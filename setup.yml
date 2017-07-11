@@ -1,4 +1,7 @@
-- hosts: all
-    become: yes
-    tasks:
-    - user: user=piyo
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+        
